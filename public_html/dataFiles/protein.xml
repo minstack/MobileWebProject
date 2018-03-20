@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  -     protein.xml for Group Project
+  -     Sung Min Yoon, Mohammad Nasim Naimy, Roina Soares Teles Bastos
+ -->
+ 
+<foodGroup>
+    <foodGroupName>Protein</foodGroupName>
+    <url>https://www.choosemyplate.gov/content/protein</url>
+    <food type="Poultry">
+        <foodName>Skinless Boneless Grilled Chicken Breast</foodName>
+        <calories amount="100g">151</calories>
+        <nutritionFacts>
+            <protein>30.54g</protein>
+            <sodium>52mg</sodium>
+            <iron>0.45mg</iron>
+        </nutritionFacts>
+    </food>
+    <food type="Meats">
+        <foodName>Lean Beef Top Sirloin Trimmed Fat</foodName>
+        <calories amount="100g">212</calories>
+        <nutritionFacts>
+            <protein>29.33g</protein>
+            <sodium>61mg</sodium>
+            <iron>1.89mg</iron>
+        </nutritionFacts>
+    </food>
+    <food type="Nuts and Seeds">
+        <foodName>Dry Roasted Unsalted Almonds</foodName>
+        <calories amount="100g">598</calories>
+        <nutritionFacts>
+            <protein>20.96</protein>
+            <sodium>3mg</sodium>
+            <iron>3.73mg</iron>
+        </nutritionFacts>
+    </food>
+    <food type="Eggs">
+        <foodName>Hard-boiled Eggs</foodName>
+        <calories amount="100g">155</calories>
+        <nutritionFacts>
+            <protein>12.58g</protein>
+            <sodium>124mg</sodium>
+            <iron>1.19mg</iron>
+        </nutritionFacts>
+    </food>
+</foodGroup>
