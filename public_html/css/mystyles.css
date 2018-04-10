@@ -2,3 +2,7 @@
  *   mystyles.css 
  */
  
+.ui-icon-usda:after {
+    background-image: url("images/usda.png");
+	background-size: 22px 22px;
+}

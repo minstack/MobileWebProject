@@ -1,0 +1,360 @@
+{
+  "type": "USDA: Code 004",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "context": "https://project-open-data.cio.gov/v1.1/schema/data.jsonld",
+  "groupdata": [
+    {
+      "classifier": "USDA-ERS-10002",
+      "contactPoint": {
+        "hasEmail": "mailto:webadmin@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Website Administrator",
+				"icon": "ui-icon-usda"
+      },
+      "description": "This chart gallery is a collection of the best Charts of Note for 2015. These charts were selected by ERS editors as those worthy of a second read because they provide context for the year’s headlines or share key insights from ERS research.",
+      "title": "Best of Charts of Note 2015",
+      "distribution": [
+        {
+          "accessURL": "https://www.ers.usda.gov/data-products/best-of-charts-of-note-2015/",
+          "type": "dcat:Distribution",
+          "title": "Chart gallery",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+        }
+      ],
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-02-28",
+      "issued": "2015-12-31",
+      "accessLevel": "public",
+      "programCode": [
+        "005:041"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      }
+    },
+    {
+      "classifier": "USDA-ERS-10003",
+      "contactPoint": {
+        "hasEmail": "mailto:webadmin@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Website Administrator",
+				"icon": ""
+      },
+      "description": "This chart gallery is a collection of the best Charts of Note for 2016. These charts were selected by ERS editors as those worthy of a second read because they provide context for the year’s headlines or share key insights from ERS research.",
+      "title": "Best of Charts of Note 2016",
+      "distribution": [
+        {
+          "accessURL": "https://www.ers.usda.gov/data-products/best-of-charts-of-note-2016/",
+          "type": "dcat:Distribution",
+          "title": "Chart gallery",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+        }
+      ],
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-02-28",
+      "issued": "2016-12-31",
+      "accessLevel": "public",
+      "programCode": [
+        "005:041"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      }
+    },
+    {
+      "classifier": "USDA-ERS-00053",
+      "accessLevel": "public",
+      "contactPoint": {
+        "hasEmail": "mailto:webadmin@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Website Administrator",
+				"icon": ""
+      },
+      "programCode": [
+        "005:041"
+      ],
+      "description": "A collection of charts from the ERS website.",
+      "title": "Chart Gallery",
+      "distribution": [
+        {
+          "type": "dcat:Distribution",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png",
+          "title": "Gallery"
+        }
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-03-19",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      },
+      "issued": "2103-12-17"
+    },
+    {
+      "classifier": "USDA-ERS-00054",
+      "accessLevel": "public",
+      "contactPoint": {
+        "hasEmail": "mailto:webadmin@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Website Administrator",
+				"icon": ""
+      },
+      "programCode": [
+        "005:041"
+      ],
+      "description": "Charts of Note from ERS is distributed Monday-Friday by the Economic Research Service to highlight charts of interest from our current and past research.",
+      "title": "Charts of Note",
+      "distribution": [
+        {
+          "type": "dcat:Distribution",
+          "downloadURL": "http://www.ers.usda.gov/data-products/charts-of-note.aspx",
+          "mediaType": "image/png",
+          "title": "Gallery of charts of note"
+        }
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-03-19",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      },
+      "accrualPeriodicity": "R/P1D"
+    },
+    {
+      "classifier": "USDA-ERS-05405",
+      "contactPoint": {
+        "hasEmail": "mailto:fgale@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Fred Gale",
+				"icon": ""
+      },
+      "description": "The China agricultural and economic database is a collection of agricultural-related data from official statistical publications of the People's Republic of China. Analysts and policy professionals around the world need information about the rapidly changing Chinese economy, but statistics are often published only in China and sometimes only in Chinese-language publications. This product assembles a wide variety of data items covering agricultural production, inputs, prices, food consumption, output of industrial products relevant to the agricultural sector, and macroeconomic data.",
+      "title": "China Agricultural and Economic Data",
+      "distribution": [
+        {
+          "accessURL": "https://data.ers.usda.gov/reports.aspx?ID=17884",
+          "type": "dcat:Distribution",
+          "title": "Query tool",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+        }
+      ],
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-03-19",
+      "describedBy": "http://www.ers.usda.gov/data-products/china-agricultural-and-economic-data/documentation.aspx",
+      "spatial": "China",
+      "issued": "2005-07-22",
+      "accessLevel": "public",
+      "programCode": [
+        "005:041"
+      ],
+      "landingPage": "https://www.ers.usda.gov/data-products/china-agricultural-and-economic-data/",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, Department of Agriculture"
+      },
+      "accrualPeriodicity": "R/P1Y"
+    },
+    {
+      "classifier": "USDA-ERS-00055",
+      "accessLevel": "public",
+      "contactPoint": {
+        "hasEmail": "mailto:blin@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Biing-Hwan Lin",
+				"icon": ""
+      },
+      "programCode": [
+        "005:041"
+      ],
+      "description": "ERS examines consumer food preferences by age, income, region, race, whether people eat at home or away, and other characteristics.",
+      "title": "Commodity Consumption by Population Characteristics",
+      "distribution": [
+        {
+          "type": "dcat:Distribution",
+          "downloadURL": "http://www.ers.usda.gov/data-products/commodity-consumption-by-population-characteristics.aspx",
+          "mediaType": "application/vnd.ms-excel",
+          "title": "Web page with links to Excel files"
+        }
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-03-19",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      },
+      "describedBy": "http://www.ers.usda.gov/data-products/commodity-consumption-by-population-characteristics/documentation.aspx",
+      "issued": "2012-09-18"
+    },
+    {
+      "classifier": "USDA-ERS-26111",
+      "contactPoint": {
+        "hasEmail": "mailto:wmcbride@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "William McBride",
+				"icon": ""
+      },
+      "description": "Cost and return estimates are reported for the United States and major production regions for corn, soybeans, wheat, cotton, grain sorghum, rice, peanuts, oats, barley, milk, hogs, and cow-calf. The history of commodity cost and return estimates for the U.S. and regions is divided into three categories: current, recent, and historical estimates. Cost of Production Forecasts are also available for major U.S. field crops.",
+      "title": "Commodity Costs and Returns",
+      "distribution": [
+        {
+          "type": "dcat:Distribution",
+          "downloadURL": "http://www.ers.usda.gov/data-products/commodity-costs-and-returns.aspx",
+          "mediaType": "application/vnd.ms-excel",
+          "title": "Web page with links to Excel files"
+        }
+      ],
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-12-23",
+      "describedBy": "http://www.ers.usda.gov/data-products/commodity-costs-and-returns/documentation.aspx#glossary",
+      "spatial": "United States",
+      "issued": "2001-01-01",
+      "accessLevel": "public",
+      "programCode": [
+        "005:041"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, Department of Agriculture"
+      },
+      "accrualPeriodicity": "R/P1Y"
+    },
+    {
+      "classifier": "USDA-ERS-00056",
+      "contactPoint": {
+        "hasEmail": "mailto:jhansen@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "James Hansen",
+				"icon": ""
+      },
+      "description": "The Commodity and Food Elasticities Database is a collection of elasticities from research on consumer demand published in working papers, dissertations, and peer-reviewed journals and as presented at professional conferences in the United States.",
+      "title": "Commodity and Food Elasticities",
+      "distribution": [
+        {
+          "accessURL": "https://data.ers.usda.gov/reports.aspx?ID=17825",
+          "type": "dcat:Distribution",
+          "title": "Query tool",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+        }
+      ],
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-06-17",
+      "describedBy": "http://www.ers.usda.gov/data-products/commodity-and-food-elasticities/glossary.aspx",
+      "issued": "2012-07-05",
+      "accessLevel": "public",
+      "programCode": [
+        "005:041"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      }
+    },
+    {
+      "classifier": "USDA-ERS-00057",
+      "accessLevel": "public",
+      "contactPoint": {
+        "hasEmail": "mailto:tparker@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Timothy Parker",
+				"icon": ""
+      },
+      "programCode": [
+        "005:041"
+      ],
+      "landingPage": "https://www.ers.usda.gov/data-products/commuting-zones-and-labor-market-areas/",
+      "description": "County boundaries do not always accurately define local economies. Commuting zones and Labor Market Areas combine counties into units intended to more closely reflect the geographic interrelationships between employers and labor supply.",
+      "title": "Commuting Zones and Labor Market Areas",
+      "distribution": [
+        {
+          "accessURL": "https://www.ers.usda.gov/data-products/commuting-zones-and-labor-market-areas/",
+          "type": "dcat:Distribution",
+          "title": "Data download page",
+          "downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+        }
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bureauCode": [
+        "005:13"
+      ],
+      "modified": "2014-03-19",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service, U.S. Department of Agriculture"
+      },
+      "describedBy": "https://www.ers.usda.gov/data-products/commuting-zones-and-labor-market-areas/documentation/",
+      "spatial": "United States",
+      "issued": "2012-02-22"
+    },
+    {
+      "classifier": "USDA-ERS-00040",
+      "accessLevel": "non-public",
+      "contactPoint": {
+        "hasEmail": "mailto:aborchers@ers.usda.gov",
+        "type": "vcard:Contact",
+        "fn": "Allison Borchers",
+				"icon": ""
+      },
+      "programCode": [
+        "005:041"
+      ],
+      "description": "Parcel level data from county assessment records and real estate transactions",
+      "title": "CoreLogic: Tax parcel and transaction records data",
+      "distribution": [ 
+				{
+					"downloadURL": "http://www.ers.usda.gov/data-products/chart-gallery.aspx",
+          "description": "Hundreds of charts by topic.",
+          "mediaType": "image/png"
+				}
+			],
+      "bureauCode": [
+        "005:13"
+      ],
+      "rights": "Purchased dataset with non-disclosure agreement",
+      "modified": "2014-02-28",
+      "publisher": {
+        "type": "org:Organization",
+        "name": "Economic Research Service: Resource and Rural Economics Division"
+      },
+      "spatial": "U.S."
+    }	
+	]
+}
