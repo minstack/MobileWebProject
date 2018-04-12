@@ -21,13 +21,8 @@
 <body>
 <!-- Home page -->
 <div data-role="page" id="home">
-    <header data-role="header" data-position="fixed" data-theme="b" >
-        <div data-role="collapsible" data-collapsed-icon="user" 
-            data-expanded-icon="carat-u" data-iconpos="right" 
-             class="center">            
+    <header data-role="header" data-position="fixed" data-theme="b" >                   
             <h1></h1>
-            <p id="student"></p>
-        </div>
     </header>
     <div class="ui-content" role="main">
         <section id="home-content">
@@ -43,24 +38,43 @@
 </div>
 <!-- end of home page -->
 
-<!-- Start of book page -->
-<div data-role="page" id="book-page" >
+<!-- Start of usda page -->
+<div data-role="page" id="usda" >
 	<header data-role="header" data-theme="b" data-position="fixed">
 		<a href="#home" data-transition="slide" data-direction="reverse"
         class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
-		<h4>Details</h4>
+		<h4 id="usda-head"></h4>
 	</header>
 
 	<div class="ui-content" role="main">
-		<div id="book-data" class="ui-grid-a container-pad">            
-        </div>
+            <div id="usda-data">            
+            </div>
 	</div>
 	
 	<footer data-role="footer" data-theme="b" data-position="fixed">
-        <p>Search results at:</p>
-        <nav data-role="navbar" id="navind"></nav>
+        <nav data-role="navbar" id="nav-usda"></nav>
 	</footer>
 </div>
+<!--end of usda page -->
+
+<!-- Start of protein page -->
+<div data-role="page" id="protein" >
+	<header data-role="header" data-theme="b" data-position="fixed">
+		<a href="#home" data-transition="slide" data-direction="reverse"
+        class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
+		<h4 id="protein-head"></h4>
+	</header>
+
+	<div class="ui-content" role="main">
+            <div id="protein-data">            
+            </div>
+	</div>
+	
+	<footer data-role="footer" data-theme="b" data-position="fixed">
+        <nav data-role="navbar" id="protein-usda"></nav>
+	</footer>
+</div>
+<!--end of protein page -->
 
 </body>
 </html>
