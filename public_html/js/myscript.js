@@ -15,7 +15,7 @@ function Student(name, stuNum, pic, login) {
 }
 
 $(document).on("click", "ul[id='studentNav'] > li", function() {
-      var i = $(this).closest("li").attr("li-id");
+    var i = $(this).closest("li").attr("li-id");
     console.log(i);
     var studentInfo = getJQMTable({
         theads: ["Name:", "Student#:", "Login:"],
@@ -38,12 +38,22 @@ $(document).on("pagecreate", "#home", function (){
         localStorage.setItem(LS_PRE + "students", JSON.stringify(data));
         
         initMainNavbar(students);
+        initProteinNavbar(students);
+        initUsdaNavbar(students);
         
         console.log(students);
     });
     
     
 });
+
+function initProteinNavbar(students){
+    initNav(students, "#protein-nav", "proteinNav");
+}
+
+function initUsdaNavbar(students){
+    initNav(students, "#nav-usda", "usdaNav");
+}
 
 function initMainNavbar(students) {
     initNav(students, "#main-nav", "studentNav");
@@ -54,9 +64,14 @@ function initNav(students, id, ulId) {
     var navHtml = "";
     var popupLink = "#student";
     
+    
     for (var i = 0; i < students.length; i++) {
+        var tempArr = students[i].name.split(" ");
+        
+        var navText = getFirstInitialAndLastName(tempArr);
+        
         navHtml += "<li li-id='"+i+"'><a href='" + popupLink + "' data-rel='popup' class='ui-btn ui-icon-group-dev ui-btn-icon-left'> " 
-                + students[i].name + "</a></li>"
+                + navText + "</a></li>"
     }
     
     $(id).html(
@@ -68,6 +83,12 @@ function initNav(students, id, ulId) {
     $(id).navbar("destroy");
     $(id).navbar();
 }
+
+function getFirstInitialAndLastName(strArr) {
+    
+    return strArr[0].substr(0,1) + ". " + strArr[strArr.length-1];
+}
+
 function initStudentArray(data) {
     var temp = data.students;
         
