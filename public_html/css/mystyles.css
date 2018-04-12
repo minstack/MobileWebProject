@@ -57,6 +57,11 @@
 	background-size: 22px 22px;
 }
 
+.ui-icon-protein:after {
+    background-image: url("images/protein.png");
+	background-size: 22px 22px;
+}
+
 p > img {
     display: block;
     width: 90px;

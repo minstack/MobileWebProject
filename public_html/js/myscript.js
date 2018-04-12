@@ -15,16 +15,20 @@ function Student(name, stuNum, pic, login) {
 }
 
 $(document).on("click", "ul[id='studentNav'] > li", function() {
-    var i = $(this).closest("li").attr("li-id");
-    console.log(i);
-    var studentInfo = getJQMTable({
-        theads: ["Name:", "Student#:", "Login:"],
-        fields: [students[i].name, students[i].studentNum, students[i].login]
-    });
+    populateStudentInfo(students, "#student-info"
+    , $(this).closest("li").attr("li-id"));
+   // console.log(i);
     
-    $("#student-info").html(studentInfo);
-    $("#student-info").append("<img src='images/" + students[i].pic 
-                                + "' alt='"+ students[i].name +"'>");
+});
+
+$(document).on("click", "ul[id='proteinNav'] > li", function() {
+    populateStudentInfo(students, "#student-info-p"
+    , $(this).closest("li").attr("li-id"));    
+});
+
+$(document).on("click", "ul[id='usdaNav'] > li", function() {
+    populateStudentInfo(students, "#student-info-u"
+    , $(this).closest("li").attr("li-id"));    
 });
 
 
@@ -38,32 +42,62 @@ $(document).on("pagecreate", "#home", function (){
         localStorage.setItem(LS_PRE + "students", JSON.stringify(data));
         
         initMainNavbar(students);
-        initProteinNavbar(students);
-        initUsdaNavbar(students);
-        
+        initListviewLinks();
         console.log(students);
     });
     
     
 });
 
+$(document).on("pagecreate", "#usda", function (){
+   
+    initUsdaNavbar(students);
+});
+
+$(document).on("pagecreate", "#protein", function (){
+   
+    initProteinNavbar(students);
+    
+});
+function populateStudentInfo(students, infoId, i) {
+    var studentInfo = getJQMTable({
+        theads: ["Name:", "Student#:", "Login:"],
+        fields: [students[i].name, students[i].studentNum, students[i].login]
+    });
+    
+    $(infoId).html(studentInfo);
+    $(infoId).append("<img src='images/" + students[i].pic 
+                                + "' alt='"+ students[i].name +"'>");
+}
+
+function initListviewLinks() {
+    
+    var content = getListview({
+        label: ["USDA", "Protein Food Group"],
+        icons: ["../css/images/usda.png", "../css/images/protein.png"],
+        links: ["#usda", "#protein"]
+    });
+    
+    $("#home-content").append(content);
+    
+    $("[data-role='listview']").listview();
+}
+    
 function initProteinNavbar(students){
-    initNav(students, "#protein-nav", "proteinNav");
+    initNav(students, "#protein-nav", "proteinNav", "#studentp");
 }
 
 function initUsdaNavbar(students){
-    initNav(students, "#nav-usda", "usdaNav");
+    initNav(students, "#nav-usda", "usdaNav", "#studentu");
 }
 
 function initMainNavbar(students) {
-    initNav(students, "#main-nav", "studentNav");
+    initNav(students, "#main-nav", "studentNav", "#student");
 }
 
 //the general function to setup nav bar in footer
-function initNav(students, id, ulId) {
-    var navHtml = "";
-    var popupLink = "#student";
-    
+function initNav(students, id, ulId, popupLink) {
+    var navHtml = "";    
     
     for (var i = 0; i < students.length; i++) {
         var tempArr = students[i].name.split(" ");
@@ -71,7 +105,7 @@ function initNav(students, id, ulId) {
         var navText = getFirstInitialAndLastName(tempArr);
         
         navHtml += "<li li-id='"+i+"'><a href='" + popupLink + "' data-rel='popup' class='ui-btn ui-icon-group-dev ui-btn-icon-left'> " 
-                + navText + "</a></li>"
+                + navText + "</a></li>";
     }
     
     $(id).html(
@@ -133,12 +167,12 @@ function getJQMTable(content) {
         row = "<tr>"
             + "<th>" + headers[i] + "</th>"
             + "<td>" + fields[i] + "</td>"
-            + "</tr>"
+            + "</tr>";
             
         table += row;
     }
     
-    table += "</table>"
+    table += "</table>";
     
     return table;
 }

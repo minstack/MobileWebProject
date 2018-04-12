@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/jquery.mobile.css">
@@ -28,7 +28,7 @@
     </header>
     <div class="ui-content" role="main">
         <section id="home-content">
-            <h4></h4>
+            <h4>[temp listview links]</h4>
         </section>
     </div>
 
@@ -55,39 +55,67 @@
 
 <!-- Start of usda page -->
 <div data-role="page" id="usda" >
-	<header data-role="header" data-theme="b" data-position="fixed">
-		<a href="#home" data-transition="slide" data-direction="reverse"
-        class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
-		<h4 id="usda-head"></h4>
-	</header>
+    <header data-role="header" data-theme="b" data-position="fixed">
+            <a href="#home" data-transition="slide" data-direction="reverse"
+    class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
+            <h4 id="usda-head"></h4>
+    </header>
 
-	<div class="ui-content" role="main">
-            <div id="usda-data">            
-            </div>
-	</div>
-	
-	<footer data-role="footer" data-theme="b" data-position="fixed">
-        <nav data-role="navbar" id="nav-usda"></nav>
-	</footer>
+    <div class="ui-content" role="main">
+        <div id="usda-data">            
+        </div>
+    </div>
+
+    <footer data-role="footer" data-theme="b" data-position="fixed">
+    <nav data-role="navbar" id="nav-usda"></nav>
+    </footer>
+    
+        <!-- Student info popup -->
+    <div data-role="popup" id="studentu" data-theme="b" 
+         data-overlay-theme="a" data-position-to="window" data-transition="slideup">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div data-role="header">
+            <h5>Student</h5>
+        </div>
+        <section role="main" class="ui-content">
+            <p id="student-info-u"></p>
+        </section>
+        
+    </div><!-- end of student popup -->
 </div>
 <!--end of usda page -->
 
 <!-- Start of protein page -->
 <div data-role="page" id="protein" >
-	<header data-role="header" data-theme="b" data-position="fixed">
-		<a href="#home" data-transition="slide" data-direction="reverse"
-        class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
-		<h4 id="protein-head"></h4>
-	</header>
+    <header data-role="header" data-theme="b" data-position="fixed">
+            <a href="#home" data-transition="slide" data-direction="reverse"
+    class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
+            <h4 id="protein-head"></h4>
+    </header>
 
-	<div class="ui-content" role="main">
-            <div id="protein-data">            
-            </div>
-	</div>
-	
-	<footer data-role="footer" data-theme="b" data-position="fixed">
-        <nav data-role="navbar" id="protein-nav"></nav>
-	</footer>
+    <div class="ui-content" role="main">
+        <div id="protein-data">            
+        </div>
+    </div>
+
+    <footer data-role="footer" data-theme="b" data-position="fixed">
+    <nav data-role="navbar" id="protein-nav"></nav>
+    </footer>
+    
+    
+    
+     <!-- Student info popup -->
+    <div data-role="popup" id="studentp" data-theme="b" 
+         data-overlay-theme="a" data-position-to="window" data-transition="slideup">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div data-role="header">
+            <h5>Student</h5>
+        </div>
+        <section role="main" class="ui-content">
+            <p id="student-info-p"></p>
+        </section>
+        
+    </div><!-- end of student popup -->
 </div>
 <!--end of protein page -->
 
