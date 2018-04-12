@@ -1,0 +1,22 @@
+{
+    "students": [
+        {
+            "fullName" : "Mohammad Nasim Naimy",
+            "studentLogin": "naimym",
+            "studentNumber": "991443812",
+            "studentPic": ""
+        },
+        {
+            "fullName" : "Roina Soares Teles Bastos",
+            "studentLogin": "soareroi",
+            "studentNumber": "991459335",
+            "studentPic": ""
+        },
+        {
+            "fullName" : "Sung Min Yoon",
+            "studentLogin": "yoosungm",
+            "studentNumber": "9961471303",
+            "studentPic": "sungImage.jpg"
+        }
+    ]
+}
