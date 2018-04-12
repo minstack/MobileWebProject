@@ -5013,7 +5013,7 @@ jQuery.Event.prototype = {
 
 		this.isDefaultPrevented = returnTrue;
 
-		if ( e && !this.isSimulated ) {
+		if ( e && !this.isSimulated && e.preventDefault ) {
 			e.preventDefault();
 		}
 	},

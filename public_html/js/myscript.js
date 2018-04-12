@@ -2,21 +2,86 @@
  *   myscript.js for Mobile Web Group Project
  *   Sung Min Yoon, Roina Soares Teles Bastos, Mohammad Nasim Naimy
  */
+var students = [];
+var LS_PRE = "pcomp-winter18-";
+var selectedStudent;
+
+//function to create Student object
+function Student(name, stuNum, pic, login) {
+    this.name = name;
+    this.studentNum = stuNum;
+    this.pic = pic;
+    this.login = login;
+}
+
+$(document).on("click", "ul[id='studentNav'] > li", function() {
+      var i = $(this).closest("li").attr("li-id");
+    console.log(i);
+    var studentInfo = getJQMTable({
+        theads: ["Name:", "Student#:", "Login:"],
+        fields: [students[i].name, students[i].studentNum, students[i].login]
+    });
+    
+    $("#student-info").html(studentInfo);
+    $("#student-info").append("<img src='images/" + students[i].pic 
+                                + "' alt='"+ students[i].name +"'>");
+});
 
 
+$(document).on("pagecreate", "#home", function (){
+   
+    //init the student json into array of student objects
+    //save to local storage for later use (the json)
+    $.getJSON("dataFiles/GroupMembers.json", function(data) {
+        
+        initStudentArray(data);
+        localStorage.setItem(LS_PRE + "students", JSON.stringify(data));
+        
+        initMainNavbar(students);
+        
+        console.log(students);
+    });
+    
+    
+});
 
+function initMainNavbar(students) {
+    initNav(students, "#main-nav", "studentNav");
+}
 
-
-
-
-
-
-
-
-
-
-
-
+//the general function to setup nav bar in footer
+function initNav(students, id, ulId) {
+    var navHtml = "";
+    var popupLink = "#student";
+    
+    for (var i = 0; i < students.length; i++) {
+        navHtml += "<li li-id='"+i+"'><a href='" + popupLink + "' data-rel='popup' class='ui-btn ui-icon-group-dev ui-btn-icon-left'> " 
+                + students[i].name + "</a></li>"
+    }
+    
+    $(id).html(
+       "<ul id='" + ulId + "'>"
+            +navHtml          
+       +"</ul>"            
+    );
+    
+    $(id).navbar("destroy");
+    $(id).navbar();
+}
+function initStudentArray(data) {
+    var temp = data.students;
+        
+    for (var i=0; i < temp.length; i++) {
+        students.push(
+            new Student(
+                temp[i].fullName,
+                temp[i].studentNumber,
+                temp[i].studentPic,
+                temp[i].studentLogin
+            )
+        );
+    }
+}
 
 //returns a listview (html string) based on the given content object
 function getListview(listviewContent) {

@@ -51,3 +51,30 @@
     background-image: url("images/orangeadmin.png");
 	background-size: 22px 22px;
 }
+
+.ui-icon-group-dev:after {
+    background-image: url("images/groupdevicon.png");
+	background-size: 22px 22px;
+}
+
+p > img {
+    display: block;
+    width: 90px;
+    height: 120px;
+    box-shadow: 0 0 5px grey;
+    margin-top: 0;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+td {
+    text-align: left;
+}
