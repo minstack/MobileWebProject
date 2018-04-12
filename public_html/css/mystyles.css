@@ -6,3 +6,48 @@
     background-image: url("images/usda.png");
 	background-size: 22px 22px;
 }
+
+.ui-icon-dev:after {
+    background-image: url("images/devicon.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-bw-person:after {
+    background-image: url("images/bwpersonicon.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-suit:after {
+    background-image: url("images/suitcartoon.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-admin1:after {
+    background-image: url("images/admin1.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-admin2:after {
+    background-image: url("images/admin2.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-admin-suit:after {
+    background-image: url("images/adminsuit.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-admin3:after {
+    background-image: url("images/admin3.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-admin-glasses:after {
+    background-image: url("images/adminglasses.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-orange-admin:after {
+    background-image: url("images/orangeadmin.png");
+	background-size: 22px 22px;
+}

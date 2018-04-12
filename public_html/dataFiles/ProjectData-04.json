@@ -45,7 +45,7 @@
         "hasEmail": "mailto:webadmin@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Website Administrator",
-				"icon": ""
+				"icon": "ui-icon-dev"
       },
       "description": "This chart gallery is a collection of the best Charts of Note for 2016. These charts were selected by ERS editors as those worthy of a second read because they provide context for the year’s headlines or share key insights from ERS research.",
       "title": "Best of Charts of Note 2016",
@@ -81,7 +81,7 @@
         "hasEmail": "mailto:webadmin@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Website Administrator",
-				"icon": ""
+				"icon": "ui-icon-bw-person"
       },
       "programCode": [
         "005:041"
@@ -115,7 +115,7 @@
         "hasEmail": "mailto:webadmin@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Website Administrator",
-				"icon": ""
+				"icon": "ui-icon-suit"
       },
       "programCode": [
         "005:041"
@@ -147,7 +147,7 @@
         "hasEmail": "mailto:fgale@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Fred Gale",
-				"icon": ""
+				"icon": "ui-icon-admin1"
       },
       "description": "The China agricultural and economic database is a collection of agricultural-related data from official statistical publications of the People's Republic of China. Analysts and policy professionals around the world need information about the rapidly changing Chinese economy, but statistics are often published only in China and sometimes only in Chinese-language publications. This product assembles a wide variety of data items covering agricultural production, inputs, prices, food consumption, output of industrial products relevant to the agricultural sector, and macroeconomic data.",
       "title": "China Agricultural and Economic Data",
@@ -187,7 +187,7 @@
         "hasEmail": "mailto:blin@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Biing-Hwan Lin",
-				"icon": ""
+				"icon": "ui-icon-admin2"
       },
       "programCode": [
         "005:041"
@@ -220,7 +220,7 @@
         "hasEmail": "mailto:wmcbride@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "William McBride",
-				"icon": ""
+				"icon": "ui-icon-admin-suit"
       },
       "description": "Cost and return estimates are reported for the United States and major production regions for corn, soybeans, wheat, cotton, grain sorghum, rice, peanuts, oats, barley, milk, hogs, and cow-calf. The history of commodity cost and return estimates for the U.S. and regions is divided into three categories: current, recent, and historical estimates. Cost of Production Forecasts are also available for major U.S. field crops.",
       "title": "Commodity Costs and Returns",
@@ -256,7 +256,7 @@
         "hasEmail": "mailto:jhansen@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "James Hansen",
-				"icon": ""
+				"icon": "ui-icon-orange-admin"
       },
       "description": "The Commodity and Food Elasticities Database is a collection of elasticities from research on consumer demand published in working papers, dissertations, and peer-reviewed journals and as presented at professional conferences in the United States.",
       "title": "Commodity and Food Elasticities",
@@ -293,7 +293,7 @@
         "hasEmail": "mailto:tparker@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Timothy Parker",
-				"icon": ""
+				"icon": "ui-icon-admin-glasses"
       },
       "programCode": [
         "005:041"
@@ -331,7 +331,7 @@
         "hasEmail": "mailto:aborchers@ers.usda.gov",
         "type": "vcard:Contact",
         "fn": "Allison Borchers",
-				"icon": ""
+				"icon": "ui-icon-admin3"
       },
       "programCode": [
         "005:041"
