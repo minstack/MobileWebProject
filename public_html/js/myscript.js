@@ -120,10 +120,6 @@ function initNav(students, id, ulId, popupLink) {
 
 function getFirstInitialAndLastName(strArr) {
     
-    if (!strArr || strArr.trim().length == 0) {
-        return "";
-    }
-    
     return strArr[0].substr(0,1) + ". " + strArr[strArr.length-1];
 }
 
