@@ -6,6 +6,7 @@
 var students = [];
 var LS_PRE = "pcomp-winter18-";
 var selectedStudent;
+var studentJson;
 
 //usda
 var usdaList = new Array();
@@ -59,7 +60,7 @@ $(document).ready(function() {
     //save to local storage for later use (the json)
     $.getJSON("dataFiles/GroupMembers.json", function(data) {
         
-        
+        studentJson = data;
         initStudentArray(data);
         localStorage.setItem(LS_PRE + "students", JSON.stringify(data));
         
@@ -181,7 +182,9 @@ function loadData() {
     $("#datalist").html();
     
     for (i = 0; i < usdaList.length; i++) {
-        $("#usda-data").append("<li li-id='"+[i]+"'><a href='#datapopup' data-rel='popup'>"+ usdaList[i].classifier +"</a></li>");
+        $("#usda-data").append("<li li-id='"+[i]+"'><a href='#datapopup' data-rel='popup'>"
+                + "<img src='images/usda-icon.png' class='ui-li-icon ui-corner-none'>"
+                + usdaList[i].classifier +"</a></li>");
     }
 }
 
