@@ -31,7 +31,6 @@ $(document).on("click", "ul[id='usdaNav'] > li", function() {
     , $(this).closest("li").attr("li-id"));    
 });
 
-
 $(document).on("pagecreate", "#home", function (){
    
     //init the student json into array of student objects
@@ -44,6 +43,8 @@ $(document).on("pagecreate", "#home", function (){
         initMainNavbar(students);
         initListviewLinks();
         console.log(students);
+        
+        
     });
     
     
