@@ -62,13 +62,31 @@
     </header>
 
     <div class="ui-content" role="main">
-        <div id="usda-data">            
+        <div id="usda-data">  
+            <ul data-role="listview" data-inset="true" id="usda-data"></ul>
         </div>
     </div>
 
     <footer data-role="footer" data-theme="b" data-position="fixed">
     <nav data-role="navbar" id="nav-usda"></nav>
     </footer>
+    
+    
+<!-- USDA data popup -->
+    <div data-role="popup" id="datapopup" data-theme="b" 
+         data-overlay-theme="a" data-position-to="window" data-transition="slideup">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div data-role="header" id="usdaDataHeader">
+
+        </div>
+        <section role="main" class="ui-content">
+            <div class="ui-corner-all custom-corners" id="datalist">
+                <p>this is text this is text this is text this is text </p>
+            </div>
+            <p id="student-info-u"></p>
+        </section>
+
+    </div><!-- end of USDA popup -->
     
         <!-- Student info popup -->
     <div data-role="popup" id="studentu" data-theme="b" 
