@@ -50,6 +50,7 @@ function loadData() {
 $(document).on("click", "ul[id='usda-data'] >li", function(){
 	dataID = $(this).closest("li").attr("li-id");
         printUsda(dataID);
+        console.log(dataID);
 });
 
 function printUsda(id){
