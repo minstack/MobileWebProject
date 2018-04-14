@@ -59,7 +59,7 @@ function printUsda(id){
             "<p><b>USDA ID: </b>"+ usdaList[id].classifier +"</p>"+
             "<p><b>Description: </b>"+ usdaList[id].description +"</p>"+
             "<p><b>Contact Name: </b>"+ usdaList[id].contactPoint.fn +"</p>"+
-            "<p><b>Contact Email: </b><a href='"+usdaList[id].contactPoint.hasEmail+"'>"+ 
+            "<p><b>Contact Email: </b><a class='ui-btn ui-btn-inline "+usdaList[id].contactPoint.icon+" ui-btn-icon-right' href='"+usdaList[id].contactPoint.hasEmail+"'>"+ 
                 usdaList[id].contactPoint.hasEmail.split('mailto:')[1] +"</a></p>"+
             "<p><b>Distribution Media Type: </b>"+ usdaList[id].distribution[0].mediaType +"</p>"+
             "<p><b>Distribution Download URL: </b><a href='"+ 
