@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <!--    
-    Assignment #2 Main File
-    Sung Min Yoon 
-    991471303               
+    Mobile Web Group Project main file
+        Roina Soares Teles Bastos
+        Mohammad Nasim Naimy
+        Sung Min Yoon 
+    Winter 2018 
 -->
 <html>
 <head>
@@ -17,18 +19,16 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile.js"></script>
 	<script src="js/myscript.js"></script>
-        <script src="js/nasim.js"></script>
-        <script src="js/roina.js"></script>
 </head>
 <body>
 <!-- Home page -->
 <div data-role="page" id="home">
     <header data-role="header" data-position="fixed" data-theme="b" >                   
-            <h1></h1>
+        <h1 id="main-head"></h1>
     </header>
-    <div class="ui-content" role="main">
+    <div class="ui-content main-content" role="main">
         <section id="home-content">
-            <h4>[temp listview links]</h4>
+            <img src="images/USDA_logo.png">
         </section>
     </div>
 
@@ -59,11 +59,14 @@
             <a href="#home" data-transition="slide" data-direction="reverse"
     class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
             <h4 id="usda-head"></h4>
+            <button id="gototop">Top</button>
     </header>
 
-    <div class="ui-content" role="main">
+    <div class="ui-content main-content" role="main">
         <div id="usda-content">  
-            <ul data-role="listview" data-inset="true" id="usda-data"></ul>
+            <ul data-role="listview" data-filter="true" 
+                data-inset="true" id="usda-data" data-icon="info"
+                data-filter-placeholder="USDA-ERS-[00000] Search"></ul>
         </div>
     </div>
 
@@ -74,14 +77,14 @@
     
 <!-- USDA data popup -->
     <div data-role="popup" id="datapopup" data-theme="b" 
-         data-overlay-theme="a" data-position-to="window" data-transition="slideup">
+         data-overlay-theme="a" data-position-to="window" data-transition="slidedown">
         <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
         <div data-role="header" id="usdaDataHeader">
 
         </div>
         <section role="main" class="ui-content">
             <div class="ui-corner-all" id="datalist">
-                <p>this is text this is text this is text this is text </p>
+                <p>content</p>
             </div>
       
         </section>
@@ -109,11 +112,12 @@
             <a href="#home" data-transition="slide" data-direction="reverse"
     class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">HOME</a>
             <h4 id="protein-head"></h4>
+            <button id="gototop-p">Top</button>
     </header>
 
-    <div class="ui-content" role="main">
+    <div class="ui-content main-content" role="main">
         <div id="url"> </div>
-        <div id="protein-data" data-role="collapsible-set">
+        <div id="protein-data" data-role="collapsible-set"><div id="url"> </div>
         </div>
     </div>
 

@@ -1,5 +1,6 @@
 /*
- *   mystyles.css 
+ *   mystyles.css for Mobile Web Group Project
+ *   Winter 2018
  */
  
 .ui-icon-usda:after {
@@ -82,6 +83,31 @@
 	background-size: 22px 22px;
 }
 
+.ui-icon-cmp:after {
+    background-image: url("images/choosemyplate.jpg");
+	background-size: 22px 22px;
+}
+
+.ui-icon-roina:after {
+    background-image: url("images/roinaicon.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-nasim:after {
+    background-image: url("images/nasimicon.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-sung:after {
+    background-image: url("images/sungicon.png");
+	background-size: 22px 22px;
+}
+
+
+#main-header-img {
+    margin: auto;
+    width: 180px;
+}
 
 p > img {
     display: block;
@@ -90,6 +116,21 @@ p > img {
     box-shadow: 0 0 5px grey;
     margin-top: 0;
     margin: auto;
+}
+
+p > a {
+    margin: 5px !important ;
+    font-size: 1em !important;
+}
+#url > a {
+    margin-top: 2px;
+    margin-bottom: 1px;
+    color: darkblue;
+    padding: 4px;
+}
+
+div > p{
+    margin-top: 0;
 }
 
 table {
@@ -103,4 +144,20 @@ th {
 
 td {
     text-align: left;
+}
+
+#datalist > p {
+    font-size: .9em;
+    margin: 0 0 6px 0;
+}
+
+.main-content {
+    padding-top: 0 !important;
+}
+
+#home-content > img {
+    display: block;
+    height: 100px;
+    margin: auto;
+    padding-top: 3px;
 }

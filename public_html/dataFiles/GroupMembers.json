@@ -4,19 +4,22 @@
             "fullName" : "Mohammad Nasim Naimy",
             "studentLogin": "naimym",
             "studentNumber": "991443812",
-            "studentPic": "nasim.jpg"
+            "studentPic": "nasim.jpg",
+            "icon" : "ui-icon-nasim"
         },
         {
             "fullName" : "Roina Soares Teles Bastos",
             "studentLogin": "soareroi",
             "studentNumber": "991459335",
-            "studentPic": "roina.png"
+            "studentPic": "roina.png",
+            "icon" : "ui-icon-roina"
         },
         {
             "fullName" : "Sung Min Yoon",
             "studentLogin": "yoosungm",
             "studentNumber": "9961471303",
-            "studentPic": "sungImage.png"
+            "studentPic": "sungImage.png",
+            "icon" : "ui-icon-sung"
         }
     ]
 }
