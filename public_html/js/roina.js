@@ -1,3 +1,4 @@
+
 $(document).on("pagebeforeshow", "#protein", function() {
 	$.ajax({
 		type: "GET", url:"dataFiles/protein.xml", dataType:"xml",
@@ -20,9 +21,14 @@ function loadProtein(xml) {
     $("#protein-data").html("");
     
     $(xml).find("food").each(function () {
+        img = $(this).attr("type").split(' ')[0];
+        
         $("#protein-data").append(
+                
                 "<section data-role='collapsible'>" +
-                        "<h2>" + $(this).attr("type") + "</h2>" +
+                        "<h2 class='ui-btn ui-icon-" + img.toString().toLowerCase() + 
+                            " ui-btn-icon-left'>" + $(this).attr("type") + 
+                        "</h2>" +
                         "<p>Food name: " + 
                             $(this).find("foodName").text() + 
                         "</p>" +

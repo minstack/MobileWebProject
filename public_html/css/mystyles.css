@@ -62,6 +62,27 @@
 	background-size: 22px 22px;
 }
 
+.ui-icon-poultry:after {
+    background-image: url("images/poultry.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-meats:after {
+    background-image: url("images/meats.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-nuts:after {
+    background-image: url("images/nuts.png");
+	background-size: 22px 22px;
+}
+
+.ui-icon-eggs:after {
+    background-image: url("images/eggs.png");
+	background-size: 22px 22px;
+}
+
+
 p > img {
     display: block;
     width: 90px;
